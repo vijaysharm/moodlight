@@ -32,22 +32,22 @@ struct TempoPickerView: View {
 			Button(action: self.tap) {
 				Text("Tap")
 					.font(.system(.headline, design: .serif))
-					.foregroundColor(Color.black)
+					.foregroundColor(Color(.label))
 					.frame(height: 48)
 					.frame(maxWidth: .infinity)
 			}.overlay(
 				RoundedRectangle(cornerRadius: 4)
-					.stroke(Color.black, lineWidth: 2)
+					.stroke(Color(.label), lineWidth: 2)
 			)
 			Button(action: self.reset) {
 				Text("Reset")
 					.font(.system(.headline, design: .serif))
-					.foregroundColor(Color.black)
+					.foregroundColor(Color(.label))
 					.frame(height: 48)
 					.frame(maxWidth: .infinity)
 			}.overlay(
 				RoundedRectangle(cornerRadius: 4)
-					.stroke(Color.black, lineWidth: 2)
+					.stroke(Color(.label), lineWidth: 2)
 			)
 		}
 		.padding()
@@ -98,10 +98,10 @@ struct TempoChangeButton: View {
 	var body: some View {
 		Button(action: self.action) {
 			Text("\(self.text)")
-				.foregroundColor(Color.white)
+				.foregroundColor(Color(.systemGray6))
 				.padding(.vertical, 10)
 				.padding(.horizontal, 30)
-		}.background(Color.black)
+		}.background(Color(.label))
 	}
 }
 

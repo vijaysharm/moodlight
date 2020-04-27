@@ -238,22 +238,22 @@ struct ColourPickerView: View {
 			Button(action: self.addColour) {
 				Text("Add Colour")
 					.font(.system(.headline, design: .serif))
-					.foregroundColor(Color.black)
+					.foregroundColor(Color(.label))
 					.frame(height: 48)
 					.frame(maxWidth: .infinity)
 			}.overlay(
 				RoundedRectangle(cornerRadius: 4)
-					.stroke(Color.black, lineWidth: 2)
+					.stroke(Color(.label), lineWidth: 2)
 			)
 			Button(action: self.removeColour) {
 				Text("Remove Colour")
 					.font(.system(.headline, design: .serif))
-					.foregroundColor(Color.black)
+					.foregroundColor(Color(.label))
 					.frame(height: 48)
 					.frame(maxWidth: .infinity)
 			}.overlay(
 				RoundedRectangle(cornerRadius: 4)
-					.stroke(Color.black, lineWidth: 2)
+					.stroke(Color(.label), lineWidth: 2)
 			)
 			ScrollView {
 				GridStack(

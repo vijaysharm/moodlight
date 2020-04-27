@@ -101,12 +101,12 @@ struct StrobeControlView: View {
 		Group {
 			Button(action: self.action) {
 				Image(systemName: self.isPlaying ? "stop.fill" : "play.fill")
-					.renderingMode(.original)
+					.accentColor(Color(.label))
 					.frame(maxWidth: .infinity)
 					.frame(height: 48)
 			}.overlay(
 				RoundedRectangle(cornerRadius: 4)
-					.stroke(Color.black, lineWidth: 2)
+					.stroke(Color(.label), lineWidth: 2)
 			)
 		}.padding()
 	}

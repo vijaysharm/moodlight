@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,19 @@
 		42668EF9244E20EE000EE7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42668EF8244E20EE000EE7FE /* Assets.xcassets */; };
 		42668EFC244E20EE000EE7FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42668EFB244E20EE000EE7FE /* Preview Assets.xcassets */; };
 		42668EFF244E20EE000EE7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42668EFD244E20EE000EE7FE /* LaunchScreen.storyboard */; };
+		42668F2724505B3D000EE7FE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F2624505B3D000EE7FE /* Models.swift */; };
+		42668F292450BAE7000EE7FE /* RepeatTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F282450BAE7000EE7FE /* RepeatTimer.swift */; };
+		42668F2B2450BC2B000EE7FE /* RhythmBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F2A2450BC2B000EE7FE /* RhythmBox.swift */; };
+		42668F2D2450D2D2000EE7FE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F2C2450D2D2000EE7FE /* MenuView.swift */; };
+		42668F312451B29A000EE7FE /* ColourPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F302451B29A000EE7FE /* ColourPickerView.swift */; };
+		42668F332451B2B1000EE7FE /* TempoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F322451B2B1000EE7FE /* TempoPickerView.swift */; };
+		42668F352452306C000EE7FE /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F342452306C000EE7FE /* GridStack.swift */; };
+		42668F3724523204000EE7FE /* SwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F3624523204000EE7FE /* SwatchView.swift */; };
+		42668F3A2457503C000EE7FE /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = 42668F392457503C000EE7FE /* Grid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42668EEF244E20EA000EE7FE /* Moodlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moodlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42668EEF244E20EA000EE7FE /* Moodlight!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moodlight!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42668EF2244E20EA000EE7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42668EF4244E20EA000EE7FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42668EF6244E20EA000EE7FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +33,14 @@
 		42668EFB244E20EE000EE7FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42668EFE244E20EE000EE7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42668F00244E20EE000EE7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42668F2624505B3D000EE7FE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		42668F282450BAE7000EE7FE /* RepeatTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTimer.swift; sourceTree = "<group>"; };
+		42668F2A2450BC2B000EE7FE /* RhythmBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmBox.swift; sourceTree = "<group>"; };
+		42668F2C2450D2D2000EE7FE /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		42668F302451B29A000EE7FE /* ColourPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPickerView.swift; sourceTree = "<group>"; };
+		42668F322451B2B1000EE7FE /* TempoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoPickerView.swift; sourceTree = "<group>"; };
+		42668F342452306C000EE7FE /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		42668F3624523204000EE7FE /* SwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42668F3A2457503C000EE7FE /* Grid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +66,7 @@
 		42668EF0244E20EA000EE7FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42668EEF244E20EA000EE7FE /* Moodlight.app */,
+				42668EEF244E20EA000EE7FE /* Moodlight!.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,13 +74,21 @@
 		42668EF1244E20EA000EE7FE /* Moodlight */ = {
 			isa = PBXGroup;
 			children = (
-				42668EF2244E20EA000EE7FE /* AppDelegate.swift */,
-				42668EF4244E20EA000EE7FE /* SceneDelegate.swift */,
-				42668EF6244E20EA000EE7FE /* ContentView.swift */,
+				42668EFA244E20EE000EE7FE /* Preview Content */,
 				42668EF8244E20EE000EE7FE /* Assets.xcassets */,
 				42668EFD244E20EE000EE7FE /* LaunchScreen.storyboard */,
 				42668F00244E20EE000EE7FE /* Info.plist */,
-				42668EFA244E20EE000EE7FE /* Preview Content */,
+				42668EF2244E20EA000EE7FE /* AppDelegate.swift */,
+				42668EF4244E20EA000EE7FE /* SceneDelegate.swift */,
+				42668EF6244E20EA000EE7FE /* ContentView.swift */,
+				42668F2C2450D2D2000EE7FE /* MenuView.swift */,
+				42668F342452306C000EE7FE /* GridStack.swift */,
+				42668F3624523204000EE7FE /* SwatchView.swift */,
+				42668F302451B29A000EE7FE /* ColourPickerView.swift */,
+				42668F322451B2B1000EE7FE /* TempoPickerView.swift */,
+				42668F2624505B3D000EE7FE /* Models.swift */,
+				42668F282450BAE7000EE7FE /* RepeatTimer.swift */,
+				42668F2A2450BC2B000EE7FE /* RhythmBox.swift */,
 			);
 			path = Moodlight;
 			sourceTree = "<group>";
@@ -91,8 +117,11 @@
 			dependencies = (
 			);
 			name = Moodlight;
+			packageProductDependencies = (
+				42668F392457503C000EE7FE /* Grid */,
+			);
 			productName = Moodlight;
-			productReference = 42668EEF244E20EA000EE7FE /* Moodlight.app */;
+			productReference = 42668EEF244E20EA000EE7FE /* Moodlight!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 42668EE6244E20EA000EE7FE;
+			packageReferences = (
+				42668F382457503B000EE7FE /* XCRemoteSwiftPackageReference "swiftui-grid" */,
+			);
 			productRefGroup = 42668EF0244E20EA000EE7FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,9 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42668F352452306C000EE7FE /* GridStack.swift in Sources */,
+				42668F2D2450D2D2000EE7FE /* MenuView.swift in Sources */,
+				42668F292450BAE7000EE7FE /* RepeatTimer.swift in Sources */,
 				42668EF3244E20EA000EE7FE /* AppDelegate.swift in Sources */,
 				42668EF5244E20EA000EE7FE /* SceneDelegate.swift in Sources */,
+				42668F2B2450BC2B000EE7FE /* RhythmBox.swift in Sources */,
 				42668EF7244E20EA000EE7FE /* ContentView.swift in Sources */,
+				42668F3724523204000EE7FE /* SwatchView.swift in Sources */,
+				42668F312451B29A000EE7FE /* ColourPickerView.swift in Sources */,
+				42668F332451B2B1000EE7FE /* TempoPickerView.swift in Sources */,
+				42668F2724505B3D000EE7FE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +329,13 @@
 				DEVELOPMENT_TEAM = 3695BW8G7F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Moodlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.Moodlight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Moodlight!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,12 +350,13 @@
 				DEVELOPMENT_TEAM = 3695BW8G7F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Moodlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.Moodlight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Moodlight!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42668F382457503B000EE7FE /* XCRemoteSwiftPackageReference "swiftui-grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:spacenation/swiftui-grid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42668F392457503C000EE7FE /* Grid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42668F382457503B000EE7FE /* XCRemoteSwiftPackageReference "swiftui-grid" */;
+			productName = Grid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42668EE7244E20EA000EE7FE /* Project object */;
 }

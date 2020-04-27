@@ -298,7 +298,7 @@ struct ColourPickerView: View {
 	}
 	
 	private func addColour() {
-		guard colours.count < 17 else { return }
+		guard colours.count < 16 else { return }
 		
 		colours.append(palette[Int.random(in: 0..<palette.count)])
 		selection = colours.count - 1

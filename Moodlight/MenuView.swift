@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MenuView: View {
+	private static let AD_ID = "ca-app-pub-1077332010614613/4056172929" // Production
+//	private static let AD_ID = "ca-app-pub-3940256099942544/2934735716" // test
+	
 	@EnvironmentObject var strobeLight: StrobeManager
 	@Binding var showMenu: Bool
 	
@@ -20,6 +23,7 @@ struct MenuView: View {
 						self.showMenu = false
 					}
 				}
+				AdBanner(adId: MenuView.AD_ID).frame(height: 50)
 				List {
 					Section(header: Text("Current")) {
 						NavigationLink(destination: TempoPickerView(strobe: self.strobeLight.current)) {
@@ -70,7 +74,8 @@ struct PresetView: View {
 	
 	private func createName(from preset: StrobeLight) -> String {
 		let colour = preset.colours.count == 1 ? "colour" : "colours"
-		let blend = preset.blend ? " (blended)" : ""
+//		let blend = preset.blend ? " (blended)" : ""
+		let blend = ""
 		return "\(preset.colours.count) \(colour)\(blend), \(preset.bpm) BPM"
 	}
 	

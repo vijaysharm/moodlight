@@ -66,7 +66,7 @@ class StrobeManager: ObservableObject {
 	init() {
 		presets.append(StrobeLight(bpm: 120, colours: [.black, .white], blend: true))
 		presets.append(StrobeLight(bpm: 80, colours: [.red, .blue, .green], blend: true))
-		presets.append(StrobeLight(bpm: 180, colours: [.blue, .green, .purple], blend: false))
+		presets.append(StrobeLight(bpm: 180, colours: [.blue, .green, .purple], blend: true))
 		
 		current = presets[0]
 		

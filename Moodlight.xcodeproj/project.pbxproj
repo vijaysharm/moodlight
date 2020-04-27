@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421995AB24578582006F6178 /* AdBannerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421995AA24578582006F6178 /* AdBannerRepresentable.swift */; };
 		42668EF3244E20EA000EE7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668EF2244E20EA000EE7FE /* AppDelegate.swift */; };
 		42668EF5244E20EA000EE7FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668EF4244E20EA000EE7FE /* SceneDelegate.swift */; };
 		42668EF7244E20EA000EE7FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668EF6244E20EA000EE7FE /* ContentView.swift */; };
@@ -22,9 +23,12 @@
 		42668F352452306C000EE7FE /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F342452306C000EE7FE /* GridStack.swift */; };
 		42668F3724523204000EE7FE /* SwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42668F3624523204000EE7FE /* SwatchView.swift */; };
 		42668F3A2457503C000EE7FE /* Grid in Frameworks */ = {isa = PBXBuildFile; productRef = 42668F392457503C000EE7FE /* Grid */; };
+		A98831E81A32EF847BAF29B5 /* Pods_Moodlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C15F318C63A9D8C226C30 /* Pods_Moodlight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A7C15F318C63A9D8C226C30 /* Pods_Moodlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moodlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421995AA24578582006F6178 /* AdBannerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerRepresentable.swift; sourceTree = "<group>"; };
 		42668EEF244E20EA000EE7FE /* Moodlight!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moodlight!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42668EF2244E20EA000EE7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42668EF4244E20EA000EE7FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 		42668F322451B2B1000EE7FE /* TempoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoPickerView.swift; sourceTree = "<group>"; };
 		42668F342452306C000EE7FE /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		42668F3624523204000EE7FE /* SwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwatchView.swift; sourceTree = "<group>"; };
+		BFCB0BC7DF636871970FF35F /* Pods-Moodlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodlight.release.xcconfig"; path = "Target Support Files/Pods-Moodlight/Pods-Moodlight.release.xcconfig"; sourceTree = "<group>"; };
+		D24B4E99A349BAE2B9F82FCE /* Pods-Moodlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moodlight.debug.xcconfig"; path = "Target Support Files/Pods-Moodlight/Pods-Moodlight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +55,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				42668F3A2457503C000EE7FE /* Grid in Frameworks */,
+				A98831E81A32EF847BAF29B5 /* Pods_Moodlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1622BACC6CE98E25E5425409 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D24B4E99A349BAE2B9F82FCE /* Pods-Moodlight.debug.xcconfig */,
+				BFCB0BC7DF636871970FF35F /* Pods-Moodlight.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1FAEF10CC50555DBF201B954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7C15F318C63A9D8C226C30 /* Pods_Moodlight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		42668EE6244E20EA000EE7FE = {
 			isa = PBXGroup;
 			children = (
 				42668EF1244E20EA000EE7FE /* Moodlight */,
 				42668EF0244E20EA000EE7FE /* Products */,
+				1622BACC6CE98E25E5425409 /* Pods */,
+				1FAEF10CC50555DBF201B954 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +115,7 @@
 				42668F2624505B3D000EE7FE /* Models.swift */,
 				42668F282450BAE7000EE7FE /* RepeatTimer.swift */,
 				42668F2A2450BC2B000EE7FE /* RhythmBox.swift */,
+				421995AA24578582006F6178 /* AdBannerRepresentable.swift */,
 			);
 			path = Moodlight;
 			sourceTree = "<group>";
@@ -108,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42668F03244E20EE000EE7FE /* Build configuration list for PBXNativeTarget "Moodlight" */;
 			buildPhases = (
+				4D7373068F0EDE00E226C1DD /* [CP] Check Pods Manifest.lock */,
 				42668EEB244E20EA000EE7FE /* Sources */,
 				42668EEC244E20EA000EE7FE /* Frameworks */,
 				42668EED244E20EA000EE7FE /* Resources */,
+				A61185255708D32EDB94E076 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +202,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D7373068F0EDE00E226C1DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moodlight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A61185255708D32EDB94E076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodlight/Pods-Moodlight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moodlight/Pods-Moodlight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moodlight/Pods-Moodlight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42668EEB244E20EA000EE7FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -183,6 +254,7 @@
 				42668F292450BAE7000EE7FE /* RepeatTimer.swift in Sources */,
 				42668EF3244E20EA000EE7FE /* AppDelegate.swift in Sources */,
 				42668EF5244E20EA000EE7FE /* SceneDelegate.swift in Sources */,
+				421995AB24578582006F6178 /* AdBannerRepresentable.swift in Sources */,
 				42668F2B2450BC2B000EE7FE /* RhythmBox.swift in Sources */,
 				42668EF7244E20EA000EE7FE /* ContentView.swift in Sources */,
 				42668F3724523204000EE7FE /* SwatchView.swift in Sources */,
@@ -322,6 +394,7 @@
 		};
 		42668F04244E20EE000EE7FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24B4E99A349BAE2B9F82FCE /* Pods-Moodlight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,6 +416,7 @@
 		};
 		42668F05244E20EE000EE7FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFCB0BC7DF636871970FF35F /* Pods-Moodlight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

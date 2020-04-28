@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Grid
 
 struct ColourPickerView: View {
 	@EnvironmentObject var strobeLight: StrobeManager
@@ -220,12 +221,25 @@ struct ColourPickerView: View {
 	
     var body: some View {
 		VStack(spacing: 8) {
-			GridStack(
-				items: self.colours.count,
-				desired: 48,
-				verticalSpacing: 0,
-				horizontalSpacing: 0
-			) { index in
+//			GeometryReader { proxy in
+//				GridStack(
+//					items: self.colours.count,
+//					desired: 48,
+//					verticalSpacing: 0,
+//					horizontalSpacing: 0,
+//					sizeProxy: proxy
+//				) { index in
+//					SwatchView(
+//						colour: self.getColour(from: self.colours, index),
+//						size: 38
+//					).frame(width: 48, height: 48)
+//					.background(self.selection == index ? Color.blue : Color(.systemBackground))
+//					.onTapGesture {
+//						self.selection = index
+//					}
+//				}.frame(width: proxy.size.width, height: proxy.size.height)
+//			}
+			Grid(0..<self.colours.count, id: \.self) { index in
 				SwatchView(
 					colour: self.getColour(from: self.colours, index),
 					size: 38
@@ -234,7 +248,12 @@ struct ColourPickerView: View {
 				.onTapGesture {
 					self.selection = index
 				}
-			}.frame(maxWidth: .infinity, alignment: .leading)
+			}.gridStyle(
+				ModularGridStyle(
+					columns: .min(48),
+					rows: .fixed(48)
+				)
+			)
 			Button(action: self.addColour) {
 				Text("Add Colour")
 					.font(.system(.headline, design: .serif))
@@ -256,24 +275,23 @@ struct ColourPickerView: View {
 					.stroke(Color(.label), lineWidth: 2)
 			)
 			ScrollView {
-				GridStack(
-					items: self.palette.count,
-					desired: 40,
-					verticalSpacing: 8,
-					horizontalSpacing: 8
-				) { index in
+				Grid(0..<self.palette.count, id: \.self) { index in
 					SwatchView(
 						colour: self.getColour(
 							from: self.palette,
 							index
 						),
-						size: 42
+						size: 38
 					).onTapGesture {
 						self.changeColour(self.palette[index])
 					}
-				}.padding(8).frame(maxWidth: .infinity)
+				}.gridStyle(
+					ModularGridStyle(
+						columns: .min(42),
+						rows: .fixed(42)
+					)
+				).padding(8)
 			}
-			.frame(maxWidth: .infinity, alignment: .leading)
 		}.onAppear(perform: {
 			self.colours = self.strobe.colours
 			self.selection = self.strobe.colours.count - 1

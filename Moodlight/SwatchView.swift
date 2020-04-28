@@ -19,7 +19,7 @@ struct SwatchView: View {
 				.frame(width: size, height: size)
 				.overlay(
 					RoundedRectangle(cornerRadius: 4)
-						.stroke(Color.black, lineWidth: 1)
+						.stroke(Color(.label), lineWidth: 1)
 				)
 			)
 		} else {

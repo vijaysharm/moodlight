@@ -25,6 +25,8 @@ struct ContentView: View {
 			self.showMenu.toggle()
 		}.sheet(isPresented: $showMenu) {
 			MenuView(showMenu: self.$showMenu).environmentObject(self.strobeLight)
+		}.onDisappear {
+			self.strobeLight.stop()
 		}
 	}
 }

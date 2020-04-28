@@ -95,8 +95,9 @@ class StrobeManager: ObservableObject {
 	}
 	
 	public func start() {
+		UIApplication.shared.isIdleTimerDisabled = true
 		timer?.stop()
-		timer = RhythmBox(bpm: 120, timeSignature: (4, 4))
+		timer = RhythmBox(bpm: current.bpm, timeSignature: (4, 4))
 		timer?.perform { _, _, _ in
 			let next = self.current.colours[self.colourIndex]
 			self.colourIndex = (self.colourIndex + 1) % self.current.colours.count
@@ -107,6 +108,7 @@ class StrobeManager: ObservableObject {
 	}
 	
 	public func stop() {
+		UIApplication.shared.isIdleTimerDisabled = false
 		timer?.stop()
 		timer = nil
 		isPlaying = false

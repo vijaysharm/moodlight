@@ -398,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Moodlight/Preview Content\"";
 				DEVELOPMENT_TEAM = R89W5J5L69;
 				ENABLE_PREVIEWS = YES;
@@ -407,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.Moodlight;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.moodlight;
 				PRODUCT_NAME = "Moodlight!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -420,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Moodlight/Preview Content\"";
 				DEVELOPMENT_TEAM = R89W5J5L69;
 				ENABLE_PREVIEWS = YES;
@@ -429,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.Moodlight;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.vijaysharma.moodlight;
 				PRODUCT_NAME = "Moodlight!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -17,6 +17,14 @@ struct ColourPickerView: View {
 	
 	let strobe: StrobeLight
 	let palette: [UIColor] = [
+		UIColor(hex: "#000000")!,
+		UIColor(hex: "#FFFFFF")!,
+		UIColor(hex: "#FF0000")!,
+		UIColor(hex: "#00FF00")!,
+		UIColor(hex: "#0000FF")!,
+		UIColor(hex: "#FF7F00")!,
+		UIColor(hex: "#FFFF00")!,
+		UIColor(hex: "#8B00FF")!,
 		UIColor(hex: "#f9ebea")!,
 		UIColor(hex: "#f2d7d5")!,
 		UIColor(hex: "#e6b0aa")!,
@@ -221,24 +229,6 @@ struct ColourPickerView: View {
 	
     var body: some View {
 		VStack(spacing: 8) {
-//			GeometryReader { proxy in
-//				GridStack(
-//					items: self.colours.count,
-//					desired: 48,
-//					verticalSpacing: 0,
-//					horizontalSpacing: 0,
-//					sizeProxy: proxy
-//				) { index in
-//					SwatchView(
-//						colour: self.getColour(from: self.colours, index),
-//						size: 38
-//					).frame(width: 48, height: 48)
-//					.background(self.selection == index ? Color.blue : Color(.systemBackground))
-//					.onTapGesture {
-//						self.selection = index
-//					}
-//				}.frame(width: proxy.size.width, height: proxy.size.height)
-//			}
 			Grid(0..<self.colours.count, id: \.self) { index in
 				SwatchView(
 					colour: self.getColour(from: self.colours, index),
@@ -323,7 +313,7 @@ struct ColourPickerView: View {
 	}
 	
 	private func removeColour() {
-		guard colours.count > 2 else { return }
+		guard colours.count > 1 else { return }
 		
 		colours.remove(at: selection)
 		selection = colours.count - 1

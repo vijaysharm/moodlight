@@ -13,6 +13,9 @@ struct TempoPickerView: View {
 	@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 	@State var bpm: Int = 0
 	
+	private static let MINIMUM_TEMPO = 1
+	private static let MAXIMUM_TEMPO = 600
+	
 	let strobe: StrobeLight
 	let counter = TapCounter()
 	
@@ -20,13 +23,13 @@ struct TempoPickerView: View {
 		VStack(spacing: 20) {
 			HStack {
 				TempoChangeButton(text: "-") {
-					self.bpm = max(self.bpm - 1, 40)
+					self.bpm = max(self.bpm - 1, TempoPickerView.MINIMUM_TEMPO)
 				}
 				Text("\(bpm)")
 					.font(.system(.headline, design: .serif))
 					.frame(maxWidth: .infinity)
 				TempoChangeButton(text: "+")  {
-					self.bpm = min(self.bpm + 1, 200)
+					self.bpm = min(self.bpm + 1, TempoPickerView.MAXIMUM_TEMPO)
 			   }
 			}.cornerRadius(4).frame(maxWidth: .infinity)
 			Button(action: self.tap) {
@@ -65,7 +68,7 @@ struct TempoPickerView: View {
 	
 	func tap() {
 		if let bpm = counter.tap() {
-			self.bpm = bpm.clamp(low: 40, high: 200)
+			self.bpm = bpm.clamp(low: TempoPickerView.MINIMUM_TEMPO, high: TempoPickerView.MAXIMUM_TEMPO)
 		}
 	}
 	
